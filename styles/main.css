@@ -33,7 +33,7 @@
 
   body {
     font-family: "Alexandria", sans-serif;
-    background: url('assets/background-blur.jpg') no-repeat center center fixed;
+    background: url('/assets/background-blur.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
