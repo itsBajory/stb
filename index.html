@@ -65,29 +65,30 @@
           <span id="logoIndicator" class="upload-indicator">Click or Drag and drop all logo images</span>
         </div>
       </label>
-
-
+    </div>
         <div class="success" id="successMessage" style="display: none;">
           <img src="assets/hands.png" alt="hands & Heart Image">
           <span class="label-header">Thanks for using ProFit AI✨</span>
           
           <span>Voila! Images processed Sucessfully!</span>
+          <img src="assets/khaby-lame.gif" alt="Khaby Lame Meme" class="khaby-lame-gif">
+          
+          <!-- Flex container for buttons -->
+          <div id="buttonContainer" style="display:none;" class="flex-container">
+            <!-- The download button will be dynamically added here -->
+            <div id="output"></div>
+            <button id="previewButton">Preview Images</button>
+          </div>
 
-          <button id="processMoreButton" style="display: none;">Process More Images</button>
         </div>
-
-    </div>
+        <button id="processMoreButton" style="display: none;">Process More Images</button>
+    
     
     <button id="processButton" class="btn-Primary">Process Images</button>
     
     
   
-    <!-- Flex container for buttons -->
-    <div id="buttonContainer" style="display:none;" class="flex-container">
-      <button id="previewButton">Preview Images</button>
-      <!-- The download button will be dynamically added here -->
-      <div id="output"></div>
-    </div>
+
     
     <!-- Toast component -->
     <div id="toast"></div>
