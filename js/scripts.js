@@ -194,11 +194,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                         offsetX = canvas.width - drawWidth; // Align to the right
                     }
     
-                    // Apply smoothing if processing a 240x135 image
-                    if (ratio.width === 240 && ratio.height === 135) {
+                    // // Apply smoothing if processing a 240x135 image
+                    // if (ratio.width === 240 && ratio.height === 135) {
+                    //     context.imageSmoothingEnabled = true;
+                    //     context.imageSmoothingQuality = 'high';
+                    // }
+
+
+                    // Apply high smoothing for all image sizes
                         context.imageSmoothingEnabled = true;
                         context.imageSmoothingQuality = 'high';
-                    }
     
                     context.drawImage(backdropImage, 0, 0, backdropImage.width, backdropImage.height, 
                                       offsetX, offsetY, drawWidth, drawHeight);
