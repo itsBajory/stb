@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
                 const blob = await new Promise(resolve => canvas.toBlob(resolve, `image/${ratio.format}`));
     
-                const fileName = `${backdropName}_${ratio.width}x${ratio.height}.${ratio.format}`.replace(/ /g, '_');
+                const fileName = `${backdropName}_${ratio.width}${ratio.height}.${ratio.format}`.replace(/ /g, '_');
     
                 if (ratio.format === 'webp' && blob.size > 150 * 1024) {
                     const reducedQualityBlob = await new Promise(resolve => canvas.toBlob(resolve, 'image/webp', 0.9));
